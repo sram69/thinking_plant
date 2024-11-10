@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+}
+
+* {
+    cursor: url('https://pngimg.com/uploads/watering_can/small/watering_can_PNG22.png') 10 10, auto;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer */
+    user-select: none;         /* Standard syntax */
+}
+
+.plant-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message {
+    position: absolute;
+    bottom: 400px; /* Slight adjustment for larger box */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 30px 40px; /* Increase padding for larger box */
+    font-size: 1.5em; /* Larger text size */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Slightly larger shadow */
+    width: 300px; /* Adjust width to accommodate larger box */
+    text-align: center; /* Center the text */
+    z-index: 10; /* Ensure message is above the plant */
+}
